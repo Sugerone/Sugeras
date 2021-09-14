@@ -31,9 +31,10 @@ const routes = [
 ]
 
 const router = createRouter({
-  // history: createWebHistory(),
+  history: createWebHistory(),
   routes
 })
+
 
 router.beforeEach((to, from, next) => {
   var userInfo = window.localStorage.getItem('token');
